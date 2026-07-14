@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Viajes</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:25px 80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.6);
+    backdrop-filter:blur(10px);
+    z-index:100;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffc107;
+}
+
+/* HERO */
+
+.hero{
+    height:50vh;
+    background:url("https://turismo.ecuadors.live/wp-content/uploads/2024/04/montanita-ecuadorlife.webp") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.5);
+}
+
+.hero h1{
+    position:relative;
+    font-size:60px;
+    z-index:2;
+}
+
+/* DESTINOS */
+
+.destinos{
+    width:90%;
+    margin:60px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1f1f1f;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card .info{
+    padding:25px;
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.card button{
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:#ffc107;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#000;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Destinos Turísticos
+</div>
+
+<nav>
+    <a href="Pagina_Web_Turismo.html">Inicio</a>
+    <a href="viajes.html">viajes</a>
+    <a href="Contactos.html">contactos</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Nuestros Destinos</h1>
+</section>
+
+<section class="destinos">
+
+<div class="card">
+
+<img src="https://ec.viajandox.com/uploads/attractive_1024.jpg">
+
+<div class="info">
+
+<h2>Santa Elena</h2>
+
+<p>
+Disfruta de playas, malecones y una gastronomía única en la provincia de Santa Elena.
+</p>
+
+<button onclick="window.open('https://es.wikipedia.org/wiki/Santa_Elena_(Ecuador)')">
+Ver más
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Malec%C3%B3n_of_Puerto_L%C3%B3pez.jpg">
+
+<div class="info">
+
+<h2>Puerto López</h2>
+
+<p>
+Uno de los principales destinos turísticos de Manabí, famoso por sus playas y la observación de ballenas.
+</p>
+
+<button onclick="window.open('https://es.wikipedia.org/wiki/Puerto_L%C3%B3pez_(Ecuador)')">
+Ver más
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://turismo.ecuadors.live/wp-content/uploads/2024/04/montanita-ecuadorlife.webp">
+
+<div class="info">
+
+<h2>Guayaquil</h2>
+
+<p>
+La ciudad más grande del Ecuador ofrece turismo urbano, gastronómico y cultural.
+</p>
+
+<button onclick="window.open('https://es.wikipedia.org/wiki/Guayaquil')">
+Ver más
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Destinos Turísticos
+
+</footer>
+<a href="Pagina_Web_Turismo.html">Inicio</a>
+
+</body>
+</html>

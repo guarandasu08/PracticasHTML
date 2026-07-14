@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<title>Contacto</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:25px 80px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.6);
+backdrop-filter:blur(10px);
+z-index:100;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffc107;
+}
+
+/* BANNER */
+
+.banner{
+height:45vh;
+background:url("https://tse4.mm.bing.net/th/id/OIP.XRGKyVKOYfk5QXl0j4EshgHaDt?cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+}
+
+.banner::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.55);
+}
+
+.banner h1{
+position:relative;
+font-size:60px;
+z-index:2;
+}
+
+/* FORMULARIO */
+
+.contenedor{
+display:flex;
+justify-content:center;
+padding:70px;
+}
+
+.formulario{
+
+width:600px;
+
+background:#1f1f1f;
+
+padding:40px;
+
+border-radius:20px;
+}
+
+.formulario h2{
+
+margin-bottom:30px;
+
+text-align:center;
+
+}
+
+input,
+textarea{
+
+width:100%;
+
+padding:15px;
+
+margin-bottom:20px;
+
+border:none;
+
+border-radius:10px;
+
+font-size:16px;
+
+}
+
+textarea{
+
+resize:none;
+
+height:180px;
+
+}
+
+button{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:30px;
+
+background:#ffc107;
+
+font-size:17px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#ffca28;
+
+}
+
+footer{
+
+background:#000;
+
+padding:25px;
+
+text-align:center;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+Destinos Turísticos
+
+</div>
+
+<nav>
+
+<a href="index.html">Inicio</a>
+
+<a href="viajes.html">Viajes</a>
+
+<a href="contacto.html">Contacto</a>
+
+</nav>
+
+</header>
+
+<section class="banner">
+
+<h1>Contacto</h1>
+
+</section>
+
+<div class="contenedor">
+
+<div class="formulario">
+
+<h2>Envíanos un mensaje</h2>
+
+<form>
+
+<input type="text" placeholder="Nombre">
+
+<input type="email" placeholder="Correo electrónico">
+
+<textarea placeholder="Escribe tu mensaje"></textarea>
+
+<button type="submit">
+
+Enviar mensaje
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Destinos Turísticos
+
+</footer>
+
+</body>
+</html>
